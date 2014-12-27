@@ -65,13 +65,12 @@ def filter_songs(submissions):
 def main():
     description = ("Generates a Spotify playlist from the submissions of any "
                    "sub-reddit. If no subreddit is specified, /r/Music is "
-                   "used. Currently, the playlist to be used needs to be "
-                   "created by the user beforehand.")
+                   "used. The name of the playlist to be generated is: "
+                   " /r/<subreddit> <current date>.")
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument('-s', '--subreddit',
                         default='Music',
-                        help=("Subreddit to use as source (standard is "
-                              "/r/Music if non is given)"))
+                        help="Subreddit to use (default is /r/Music)")
     args = parser.parse_args()
 
     # parse the subreddit from the user input, remove /r/ and closing slash
