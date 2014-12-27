@@ -20,7 +20,7 @@ How to use
 
 Example
 --------------
-`python main.py -s Rock` will generate a Spotify playlist with the name "/r/Rock 1-jan-2015" (if run on the first of January).
+`python main.py -s Rock` will generate a Spotify playlist from the 100 hottest submissions of /r/Rock with the name "/r/Rock 1-jan-2015" (if run on the first of January).
 
 License
 --------------
